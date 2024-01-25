@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Ranashekar9666/taxi-booking-234.gitt']])
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Ranashekar9666/taxi-booking-234.git']])
             }
         }
         stage('Build'){
